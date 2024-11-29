@@ -1,0 +1,90 @@
+body{
+    background-color: #0d1117;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form p{
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo{
+    margin: 50px;
+    max-width: 150px;   
+}
+
+form .leibou{
+    margin-bottom: 5px;
+    transition-duration: 0.2s;
+}
+
+form .inp{
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #2563eb;
+    background-color: #161b22;
+    color: #f0f6fc;
+    font-size: 16px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+form .inp:hover {
+    outline: none;
+    border-color: #1d4ed8;
+    background-color: #0d1117;
+}
+
+div .checkbox{
+    color: white;
+}
+
+form .but{
+    padding: 10px 40px;
+    border: 1px solid #2563eb;
+    background-color: transparent;
+    color: #f0f6fc;
+    border-radius: 12px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form .but:hover{
+    box-shadow: 0px 4px 15px rgba(37, 99, 235, 0.5);
+    cursor: pointer;
+    background-color: white;
+    color: #161b22;
+}
+
+.forgotpass{
+    font-size: 16px;
+    text-decoration: underline; 
+    color: rgb(114, 114, 114);
+    text-align: right;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 1px solid #2563eb;
+    border-radius: 12px;
+    min-height: 300px;
+    min-width: 300px;
+    padding: 30px 50px;
+    justify-content: space-around;
+    box-shadow: 0px 4px 15px rgba(37, 99, 235, 0.5);
+}
