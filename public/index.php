@@ -12,12 +12,10 @@
 
 <?php
 date_default_timezone_set('America/Sao_Paulo');
-
 $arquivoMensagens = "mensagens.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mensagem = trim($_POST['mensagem']);
-
     if (!empty($mensagem)) {
         $dataHora = date("d/m/Y H:i");
         $novaMensagem = "<div class='msg' id='msg-id'>\n\t<div class='user-div'>\n\t\t<img src='../assets/img/user.png' alt='user' class='user'>\n\t\t<div class='user-id'>\n\t\t\t<p>@user_example</p>\n\t\t</div>\n\t</div>\n\t<p class='texto'>" . htmlspecialchars($mensagem) . "</p>\n\t<p class='time'>$dataHora</p>\n</div>\n\n";
