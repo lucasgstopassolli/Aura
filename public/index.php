@@ -34,6 +34,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!--Header-->
     <?php include "include/header.php"?>
 
+    <div>
+        <label for="livro">Escolha o Livro:</label>
+        <input type="text" id="livro" placeholder="Ex: João">
+    </div>
+    <div>
+        <label for="capitulo">Capítulo:</label>
+        <input type="number" id="capitulo" placeholder="Ex: 3">
+    </div>
+    <div>
+        <label for="versiculo">Versículo:</label>
+        <input type="number" id="versiculo" placeholder="Ex: 16">
+    </div>
+    <button onclick="buscarPassagem()">Buscar Passagem</button>
+
+    <div class="bible-passagem" id="passagem">
+        <!-- A passagem será exibida aqui -->
+    </div>
+
     <!-- Input de mensagens -->
     <form method="POST" class="formu        ">
         <div class="input-msg">
